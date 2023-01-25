@@ -26,7 +26,7 @@ import {
      return (
        <View style={{ flex: 1 }}>
          <ImageBackground
-           source={require("../assets/background-image.png")}
+           source={require("../assets/Background Image.png")}
            style={styles.image}
          >
            <Text style={styles.title}>Chat App</Text>
