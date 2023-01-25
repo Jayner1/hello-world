@@ -1,5 +1,5 @@
 import React, { Component } from "react";
- import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
  export default class Chat extends Component {
    componentDidMount() {
