@@ -10,9 +10,9 @@ import {
  
 
  const backgroundColors = {
-   black: { backgroundColor: "#090C08" },
-   purple: { backgroundColor: "#474056" },
-   grey: { backgroundColor: "#d8d1d8" },
+   blue: { backgroundColor: "#3155ce" },
+   gold: { backgroundColor: "#dab81e" },
+   red: { backgroundColor: "#da0610" },
    green: { backgroundColor: "#94ae89" },
  };
 
@@ -22,7 +22,7 @@ import {
      this.state = { name: "", color: "" };
    }
    render() {
-     const { black, purple, grey, green } = backgroundColors;
+     const { blue, gold, red, green } = backgroundColors;
      return (
        <View style={{ flex: 1 }}>
          <ImageBackground
@@ -43,36 +43,36 @@ import {
                  <TouchableOpacity
                    style={[
                      styles.color,
-                     black,
-                     this.state.color === black.backgroundColor
+                     blue,
+                     this.state.color === blue.backgroundColor
                        ? styles.colorSelected
                        : {},
                    ]}
                    onPress={() =>
-                     this.setState({ color: black.backgroundColor })
+                     this.setState({ color: blue.backgroundColor })
                    }
                  />
                  <TouchableOpacity
                    style={[
                      styles.color,
-                     purple,
-                     this.state.color === purple.backgroundColor
+                     gold,
+                     this.state.color === gold.backgroundColor
                        ? styles.colorSelected
                        : {},
                    ]}
                    onPress={() =>
-                     this.setState({ color: purple.backgroundColor })
+                     this.setState({ color: gold.backgroundColor })
                    }
                  />
                  <TouchableOpacity
                    style={[
                      styles.color,
-                     grey,
-                     this.state.color === grey.backgroundColor
+                     red,
+                     this.state.color === red.backgroundColor
                        ? styles.colorSelected
                        : {},
                    ]}
-                   onPress={() => this.setState({ color: grey.backgroundColor })}
+                   onPress={() => this.setState({ color: red.backgroundColor })}
                  />
                  <TouchableOpacity
                    style={[
