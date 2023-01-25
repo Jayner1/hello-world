@@ -18,7 +18,7 @@ export default class Start extends React.Component {
     return (
       <View style={styles.container}>
         <ImageBackground
-          source={require('../assets/background-image.png')}
+          source={require('../assets/Background Image.png')}
           style={[styles.container, styles.image]}
         >
           <Text style={styles.title}>App Title</Text>
