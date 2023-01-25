@@ -64,7 +64,7 @@ export default class Start extends React.Component {
               }
             >
               <Text
-                style={[styles.colorText, styles.chatBoxText]}>Start Chatting</Text>
+                style={[styles.colorText, styles.chatBoxText]}>Start Chatting!</Text>
             </TouchableOpacity>
           </View>
         </ImageBackground>
