@@ -11,14 +11,12 @@ import { GiftedChat, Bubble } from 'react-native-gifted-chat';
    }
 
    componentDidMount() {
-     // Set the name property to be included in the navigation bar
      let name = this.props.route.params.name;
 
      this.setState({
        messages: [
          {
            _id: 1,
-           //text: `Hi ${name}, how are you today?`,
            text: `Hello developer`,
            createdAt: new Date(),
            user: {
@@ -62,7 +60,6 @@ import { GiftedChat, Bubble } from 'react-native-gifted-chat';
    }
 
    render() {
-     // Set the color property as background color for the chat screen
      let color = this.props.route.params.color;
      return (
        <View style={[styles.container, { backgroundColor: color }]}>
