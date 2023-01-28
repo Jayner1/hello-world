@@ -29,6 +29,8 @@ export default class Chat extends React.Component {
         storageBucket: "test-3cf65.appspot.com",
       
         messagingSenderId: "920817637813",
+        
+        appId: "1:920817637813:web:cd57320fde3f1a6fad21fc",
       
     });
   }
