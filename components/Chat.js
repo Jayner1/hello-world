@@ -5,6 +5,8 @@ import { GiftedChat, Bubble } from 'react-native-gifted-chat';
 const firebase = require('firebase');
 require('firebase/firestore');
 
+AppRegistry.registerComponent('hello-world', ()  => App);
+
 export default class Chat extends React.Component {
     constructor() {
       super();
@@ -42,9 +44,16 @@ componentDidMount() {
      let name = this.props.route.params.name;
      
      this.setState({
-       messages: [
-       ],
-     });
+      messages: [
+        {
+          _id: 2,
+          text: `${name} has entered the chat`,
+          createdAt: new Date(),
+          system: true,
+        },
+      ],
+    });
+
 
      this.props.navigation.setOptions({ title: name });
 
