@@ -40,6 +40,7 @@ export default class Chat extends React.Component {
 
 componentDidMount() {
      let name = this.props.route.params.name;
+     
      this.setState({
        messages: [
        ],
