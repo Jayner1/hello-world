@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React from 'react';
 import {
-   View,
-   Text,
-   TextInput,
-   ImageBackground,
-   StyleSheet,
-   TouchableOpacity,
- } from "react-native";
- 
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
 
  const backgroundColors = {
    blue: { backgroundColor: "#3155ce" },
