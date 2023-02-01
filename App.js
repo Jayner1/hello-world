@@ -1,3 +1,6 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import React, { Component } from 'react';
 import Start from './components/Start';
 import Chat from './components/Chat';
 
