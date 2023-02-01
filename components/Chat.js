@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Platform, KeyboardAvoidingView } from 'react-native';
-import { GiftedChat, Bubble } from 'react-native-gifted-chat';
+import { GiftedChat, Bubble, InputToolbar } from 'react-native-gifted-chat';
 
 const firebase = require('firebase');
 require('firebase/firestore');
