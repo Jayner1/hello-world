@@ -1,3 +1,5 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import React, { Component } from 'react';
 // import the screens
 import Start from './components/Start';
