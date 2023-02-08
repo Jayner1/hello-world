@@ -31,6 +31,21 @@ A native chat app built with React Native. The app provides users with a chat in
 - On the Expo Go App, launch the chat-app by scanning the QR code shown in your terminal
 - On an emulator, launch the chat-app by pressing "Run on Android device / emulator
 
-### Set up the Database
-Chat messages are stored on [Firebase](https://firebase.google.com/), version 8.2.3.
-Firebase documentation can be found [here](https://firebase.google.com/docs/web/setup).
+### Data storage (Firestore)
+- Sign in at [Google Firebase/Firestore](https://firebase.google.com/) 
+- Go to console, start in test mode
+- Settings/General/Your apps => Click "Firestore for Web" and copy the contents of the `config` object.
+- In app file Components/Chat.js, replace Firebase config data with the copied credentials
+
+> Chat.js
+>
+> ```javascript
+> firebase.initializeApp({
+>   apiKey: 'your-api-key',
+>   authDomain: 'your-authdomain',
+>   databaseURL: 'your-database-url',
+>   projectId: 'your-project-id',
+>   storageBucket: 'your-storage-bucket',
+>   messagingSenderId: 'your-messaging-sender-id',
+>   appId: 'your-app-id',
+> });
