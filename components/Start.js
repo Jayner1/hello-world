@@ -15,7 +15,7 @@ import {
    green: { backgroundColor: "#94ae89" },
  };
 
- export default class Start extends Component {
+ export default class Start extends React.Component {
    constructor(props) {
      super(props);
      this.state = { name: "", color: "" };
